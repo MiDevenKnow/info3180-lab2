@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="d-flex justify-content-center">
+  <div class="card border border-2">
+    <div class="text-center card-header" id="header" >
+      <img class="img-fluid" src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="...">
+      <p class="fw-bold fs-3 mt-2">Kabian Davidson</p>
+      <p class="mt-4">@kdavidson</p>
+      <p>Kingston, Jamaica</p>
+      <p>Joined {{ date }}</p>
+    </div>
+    <div class="card-body text-center">
+      <p class="card-text grey">
+        I am 3rd year university student that is very passionate about his 
+        major (Computer Science) and minor (Statistics).  
+      </p>
+      <div class="d-grid col-8 mx-auto mt-2">
+        <div class="row fw-bold fs-5">
+          <div class="col">7</div>
+          <div class="col">100</div>
+          <div class="col">250</div>
+        </div>
+      </div>
+      <div class="d-grid col-8 mx-auto">
+        <div class="row grey">
+          <div class="col">Posts</div>
+          <div class="col">Following</div>
+          <div class="col">Followers</div>
+        </div>
+      </div>
+      <div class="d-grid col-4 mx-auto mt-4 mb-2">
+        <button type="button" class="btn btn-dark px-5 fw-bold">Follow</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
